@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Especiais para Você</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Receitas do Amor</h1>
+            <p>Selecione os ingredientes que você tem e vamos criar algo especial!</p>
+        </header>
+        
+        <div class="content">
+            <section class="ingredients-section">
+                <h2>Ingredientes Disponíveis</h2>
+                <div class="ingredients-grid" id="ingredients-container">
+                    <!-- Ingredientes serão carregados via JavaScript -->
+                </div>
+                <button id="find-recipes" class="btn">Encontrar Receitas</button>
+            </section>
+            
+            <section class="results-section hidden" id="results-section">
+                <h2>Receitas Encontradas</h2>
+                <div class="recipes-container" id="recipes-container">
+                    <!-- Receitas aparecerão aqui -->
+                </div>
+                <button id="back-to-ingredients" class="btn">Voltar</button>
+            </section>
+        </div>
+        
+        <footer>
+            <p>Feito com ❤️ para você</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
