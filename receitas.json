@@ -1,0 +1,432 @@
+{
+  "ingredientes": [
+    // Laticínios e Ovos
+    {"id": 1, "nome": "Ovo", "icon": "🥚", "categoria": "laticinios"},
+    {"id": 2, "nome": "Leite", "icon": "🥛", "categoria": "laticinios"},
+    {"id": 3, "nome": "Queijo mussarela", "icon": "🧀", "categoria": "laticinios"},
+    {"id": 4, "nome": "Queijo prato", "icon": "🧀", "categoria": "laticinios"},
+    {"id": 5, "nome": "Requeijão", "icon": "🧈", "categoria": "laticinios"},
+    {"id": 6, "nome": "Iogurte natural", "icon": "🥛", "categoria": "laticinios"},
+    {"id": 7, "nome": "Creme de leite", "icon": "🥛", "categoria": "laticinios"},
+    {"id": 8, "nome": "Manteiga", "icon": "🧈", "categoria": "laticinios"},
+    
+    // Frutas
+    {"id": 9, "nome": "Banana", "icon": "🍌", "categoria": "frutas"},
+    {"id": 10, "nome": "Maçã", "icon": "🍎", "categoria": "frutas"},
+    {"id": 11, "nome": "Morango", "icon": "🍓", "categoria": "frutas"},
+    {"id": 12, "nome": "Abacaxi", "icon": "🍍", "categoria": "frutas"},
+    {"id": 13, "nome": "Manga", "icon": "🥭", "categoria": "frutas"},
+    {"id": 14, "nome": "Limão", "icon": "🍋", "categoria": "frutas"},
+    {"id": 15, "nome": "Uva", "icon": "🍇", "categoria": "frutas"},
+    
+    // Vegetais
+    {"id": 16, "nome": "Tomate", "icon": "🍅", "categoria": "vegetais"},
+    {"id": 17, "nome": "Alface", "icon": "🥬", "categoria": "vegetais"},
+    {"id": 18, "nome": "Cenoura", "icon": "🥕", "categoria": "vegetais"},
+    {"id": 19, "nome": "Brócolis", "icon": "🥦", "categoria": "vegetais"},
+    {"id": 20, "nome": "Batata", "icon": "🥔", "categoria": "vegetais"},
+    {"id": 21, "nome": "Batata-doce", "icon": "🍠", "categoria": "vegetais"},
+    {"id": 22, "nome": "Abobrinha", "icon": "🥒", "categoria": "vegetais"},
+    {"id": 23, "nome": "Berinjela", "icon": "🍆", "categoria": "vegetais"},
+    {"id": 24, "nome": "Pimentão", "icon": "🫑", "categoria": "vegetais"},
+    
+    // Carnes e Proteínas
+    {"id": 25, "nome": "Peito de frango", "icon": "🍗", "categoria": "carnes"},
+    {"id": 26, "nome": "Carne moída", "icon": "🥩", "categoria": "carnes"},
+    {"id": 27, "nome": "Ovos de codorna", "icon": "🥚", "categoria": "carnes"},
+    {"id": 28, "nome": "Salmão", "icon": "🐟", "categoria": "carnes"},
+    {"id": 29, "nome": "Atum enlatado", "icon": "🐟", "categoria": "carnes"},
+    {"id": 30, "nome": "Presunto", "icon": "🍖", "categoria": "carnes"},
+    {"id": 31, "nome": "Bacon", "icon": "🥓", "categoria": "carnes"},
+    {"id": 32, "nome": "Linguiça", "icon": "🌭", "categoria": "carnes"},
+    
+    // Grãos e Cereais
+    {"id": 33, "nome": "Arroz branco", "icon": "🍚", "categoria": "graos"},
+    {"id": 34, "nome": "Arroz integral", "icon": "🌾", "categoria": "graos"},
+    {"id": 35, "nome": "Feijão carioca", "icon": "🥫", "categoria": "graos"},
+    {"id": 36, "nome": "Lentilha", "icon": "🥫", "categoria": "graos"},
+    {"id": 37, "nome": "Grão-de-bico", "icon": "🥫", "categoria": "graos"},
+    {"id": 38, "nome": "Aveia", "icon": "🌾", "categoria": "graos"},
+    {"id": 39, "nome": "Quinoa", "icon": "🌾", "categoria": "graos"},
+    
+    // Massas
+    {"id": 40, "nome": "Macarrão espaguete", "icon": "🍝", "categoria": "massas"},
+    {"id": 41, "nome": "Macarrão penne", "icon": "🍝", "categoria": "massas"},
+    {"id": 42, "nome": "Farinha de trigo", "icon": "🌾", "categoria": "massas"},
+    {"id": 43, "nome": "Farinha de rosca", "icon": "🍞", "categoria": "massas"},
+    
+    // Temperos e Condimentos
+    {"id": 44, "nome": "Sal", "icon": "🧂", "categoria": "temperos"},
+    {"id": 45, "nome": "Açúcar", "icon": "🍚", "categoria": "temperos"},
+    {"id": 46, "nome": "Azeite", "icon": "🫒", "categoria": "temperos"},
+    {"id": 47, "nome": "Vinagre", "icon": "🍶", "categoria": "temperos"},
+    {"id": 48, "nome": "Mostarda", "icon": "🫙", "categoria": "temperos"},
+    {"id": 49, "nome": "Maionese", "icon": "🫙", "categoria": "temperos"},
+    {"id": 50, "nome": "Ketchup", "icon": "🍅", "categoria": "temperos"},
+    {"id": 51, "nome": "Molho de soja", "icon": "🍶", "categoria": "temperos"},
+    {"id": 52, "nome": "Pimenta", "icon": "🌶️", "categoria": "temperos"},
+    {"id": 53, "nome": "Alho", "icon": "🧄", "categoria": "temperos"},
+    {"id": 54, "nome": "Cebola", "icon": "🧅", "categoria": "temperos"},
+    {"id": 55, "nome": "Salsinha", "icon": "🌿", "categoria": "temperos"},
+    {"id": 56, "nome": "Coentro", "icon": "🌿", "categoria": "temperos"}
+  ],
+  "receitas": [
+    // Café da Manhã (8 receitas)
+    {
+      "id": 1,
+      "nome": "Omelete de Queijo",
+      "ingredientes": [1, 3, 53, 54, 44],
+      "dificuldade": "fácil",
+      "tempo": "10 min",
+      "porcoes": 1,
+      "instrucoes": "1. Bata os ovos\n2. Misture com queijo ralado\n3. Refogue cebola e alho\n4. Despeje os ovos e cozinhe",
+      "categoria": "café da manhã",
+      "tags": ["rápido", "proteico"]
+    },
+    {
+      "id": 2,
+      "nome": "Panqueca Americana",
+      "ingredientes": [1, 2, 42, 45, 8],
+      "dificuldade": "fácil",
+      "tempo": "20 min",
+      "porcoes": 4,
+      "instrucoes": "1. Misture todos os ingredientes\n2. Aqueça a frigideira\n3. Despeje a massa e vire quando formar bolhas",
+      "categoria": "café da manhã",
+      "tags": ["doce", "familiar"]
+    },
+    {
+      "id": 3,
+      "nome": "Iogurte com Granola",
+      "ingredientes": [6, 38, 11, 45],
+      "dificuldade": "fácil",
+      "tempo": "5 min",
+      "porcoes": 1,
+      "instrucoes": "1. Coloque o iogurte na tigela\n2. Adicione granola e frutas\n3. Regue com mel",
+      "categoria": "café da manhã",
+      "tags": ["saudável", "rápido"]
+    },
+    {
+      "id": 4,
+      "nome": "Vitamina de Banana",
+      "ingredientes": [2, 9, 38, 45],
+      "dificuldade": "fácil",
+      "tempo": "5 min",
+      "porcoes": 2,
+      "instrucoes": "1. Bata todos os ingredientes no liquidificador\n2. Sirva gelado",
+      "categoria": "café da manhã",
+      "tags": ["energético", "simples"]
+    },
+    {
+      "id": 5,
+      "nome": "Torrada com Abacate",
+      "ingredientes": [10, 46, 44, 52],
+      "dificuldade": "fácil",
+      "tempo": "5 min",
+      "porcoes": 1,
+      "instrucoes": "1. Amasse o abacate\n2. Tempere com sal e pimenta\n3. Passe na torrada\n4. Regue com azeite",
+      "categoria": "café da manhã",
+      "tags": ["saudável", "vegetariano"]
+    },
+    {
+      "id": 6,
+      "nome": "Crepioca",
+      "ingredientes": [1, 42, 44, 8],
+      "dificuldade": "fácil",
+      "tempo": "10 min",
+      "porcoes": 1,
+      "instrucoes": "1. Misture 1 ovo com 2 colheres de tapioca\n2. Tempere com sal\n3. Frite como uma panqueca",
+      "categoria": "café da manhã",
+      "tags": ["low carb", "proteico"]
+    },
+    {
+      "id": 7,
+      "nome": "Overnight Oats",
+      "ingredientes": [2, 38, 9, 45],
+      "dificuldade": "fácil",
+      "tempo": "5 min + repouso",
+      "porcoes": 1,
+      "instrucoes": "1. Misture todos os ingredientes\n2. Deixe na geladeira overnight\n3. Adicione frutas antes de servir",
+      "categoria": "café da manhã",
+      "tags": ["prático", "saudável"]
+    },
+    {
+      "id": 8,
+      "nome": "Sanduíche de Ovo",
+      "ingredientes": [1, 4, 30, 10],
+      "dificuldade": "fácil",
+      "tempo": "15 min",
+      "porcoes": 1,
+      "instrucoes": "1. Cozinhe os ovos\n2. Monte o sanduíche com os ingredientes\n3. Leve à sanduicheira",
+      "categoria": "café da manhã",
+      "tags": ["proteico", "satisfatório"]
+    },
+
+    // Almoço (12 receitas)
+    {
+      "id": 9,
+      "nome": "Arroz com Frango",
+      "ingredientes": [25, 33, 53, 54, 44, 52],
+      "dificuldade": "médio",
+      "tempo": "40 min",
+      "porcoes": 4,
+      "instrucoes": "1. Tempere o frango\n2. Refogue com cebola e alho\n3. Cozinhe o arroz separadamente\n4. Misture tudo no final",
+      "categoria": "almoço",
+      "tags": ["clássico", "completo"]
+    },
+    {
+      "id": 10,
+      "nome": "Macarrão à Bolonhesa",
+      "ingredientes": [26, 40, 16, 53, 54, 44],
+      "dificuldade": "médio",
+      "tempo": "30 min",
+      "porcoes": 4,
+      "instrucoes": "1. Cozinhe o macarrão\n2. Refogue a carne moída\n3. Adicione molho de tomate e temperos\n4. Misture com o macarrão",
+      "categoria": "almoço",
+      "tags": ["italiano", "familiar"]
+    },
+    {
+      "id": 11,
+      "nome": "Frango Assado",
+      "ingredientes": [25, 53, 54, 44, 52, 46],
+      "dificuldade": "médio",
+      "tempo": "1 hora",
+      "porcoes": 4,
+      "instrucoes": "1. Tempere o frango com alho, cebola e azeite\n2. Asse em forno pré-aquecido a 180°C por 45 minutos",
+      "categoria": "almoço",
+      "tags": ["assado", "festivo"]
+    },
+    {
+      "id": 12,
+      "nome": "Risoto de Frango",
+      "ingredientes": [25, 33, 2, 3, 53, 54],
+      "dificuldade": "difícil",
+      "tempo": "50 min",
+      "porcoes": 3,
+      "instrucoes": "1. Refogue o frango\n2. Adicione o arroz e caldo aos poucos\n3. Finalize com queijo",
+      "categoria": "almoço",
+      "tags": ["cremoso", "sofisticado"]
+    },
+    {
+      "id": 13,
+      "nome": "Feijoada Light",
+      "ingredientes": [35, 25, 31, 53, 54, 44],
+      "dificuldade": "difícil",
+      "tempo": "2 horas",
+      "porcoes": 6,
+      "instrucoes": "1. Cozinhe o feijão\n2. Adicione as carnes\n3. Ajuste os temperos",
+      "categoria": "almoço",
+      "tags": ["brasileira", "completa"]
+    },
+    {
+      "id": 14,
+      "nome": "Strogonoff de Frango",
+      "ingredientes": [25, 7, 49, 16, 53, 44],
+      "dificuldade": "médio",
+      "tempo": "35 min",
+      "porcoes": 4,
+      "instrucoes": "1. Doure o frango\n2. Adicione os outros ingredientes\n3. Finalize com creme de leite",
+      "categoria": "almoço",
+      "tags": ["cremoso", "confort"]
+    },
+    {
+      "id": 15,
+      "nome": "Moqueca de Peixe",
+      "ingredientes": [28, 16, 24, 14, 46, 44],
+      "dificuldade": "médio",
+      "tempo": "40 min",
+      "porcoes": 4,
+      "instrucoes": "1. Tempere o peixe\n2. Monte camadas com os vegetais\n3. Cozinhe em fogo baixo",
+      "categoria": "almoço",
+      "tags": ["baiana", "peixe"]
+    },
+    {
+      "id": 16,
+      "nome": "Lasanha de Berinjela",
+      "ingredientes": [23, 3, 16, 26, 42, 44],
+      "dificuldade": "difícil",
+      "tempo": "1 hora",
+      "porcoes": 6,
+      "instrucoes": "1. Prepare as berinjelas\n2. Monte camadas com os outros ingredientes\n3. Asse por 30 minutos",
+      "categoria": "almoço",
+      "tags": ["vegetariana", "assada"]
+    },
+    {
+      "id": 17,
+      "nome": "Frango Xadrez",
+      "ingredientes": [25, 22, 24, 51, 53, 44],
+      "dificuldade": "médio",
+      "tempo": "35 min",
+      "porcoes": 4,
+      "instrucoes": "1. Doure o frango\n2. Adicione os vegetais\n3. Finalize com molho shoyu",
+      "categoria": "almoço",
+      "tags": ["chinesa", "agitado"]
+    },
+    {
+      "id": 18,
+      "nome": "Tacos Mexicanos",
+      "ingredientes": [26, 16, 17, 4, 50, 52],
+      "dificuldade": "médio",
+      "tempo": "40 min",
+      "porcoes": 4,
+      "instrucoes": "1. Prepare o recheio de carne\n2. Monte os tacos com os acompanhamentos\n3. Sirva com molhos",
+      "categoria": "almoço",
+      "tags": ["mexicano", "divertido"]
+    },
+    {
+      "id": 19,
+      "nome": "Quiche de Espinafre",
+      "ingredientes": [1, 8, 19, 3, 42, 44],
+      "dificuldade": "médio",
+      "tempo": "1 hora",
+      "porcoes": 6,
+      "instrucoes": "1. Prepare a massa\n2. Misture o recheio\n3. Asse até dourar",
+      "categoria": "almoço",
+      "tags": ["vegetariana", "sofisticada"]
+    },
+    {
+      "id": 20,
+      "nome": "Salada Caesar",
+      "ingredientes": [17, 25, 4, 43, 49, 44],
+      "dificuldade": "fácil",
+      "tempo": "20 min",
+      "porcoes": 2,
+      "instrucoes": "1. Misture todos os ingredientes\n2. Regue com o molho\n3. Finalize com croutons",
+      "categoria": "almoço",
+      "tags": ["leve", "clássica"]
+    },
+
+    // Jantar (12 receitas)
+    {
+      "id": 21,
+      "nome": "Sopa de Legumes",
+      "ingredientes": [16, 18, 20, 22, 53, 44],
+      "dificuldade": "fácil",
+      "tempo": "35 min",
+      "porcoes": 4,
+      "instrucoes": "1. Corte todos os legumes\n2. Cozinhe em água com temperos\n3. Bata parcialmente para textura cremosa",
+      "categoria": "jantar",
+      "tags": ["confort", "saudável"]
+    },
+    {
+      "id": 22,
+      "nome": "Sanduíche de Frango",
+      "ingredientes": [10, 25, 3, 16, 17, 49],
+      "dificuldade": "fácil",
+      "tempo": "15 min",
+      "porcoes": 2,
+      "instrucoes": "1. Cozinhe e desfie o frango\n2. Monte o sanduíche com os ingredientes\n3. Leve à sanduicheira ou coma natural",
+      "categoria": "jantar",
+      "tags": ["rápido", "prático"]
+    },
+    {
+      "id": 23,
+      "nome": "Omelete de Espinafre",
+      "ingredientes": [1, 19, 3, 53, 44, 46],
+      "dificuldade": "fácil",
+      "tempo": "15 min",
+      "porcoes": 1,
+      "instrucoes": "1. Refogue o espinafre\n2. Adicione aos ovos batidos\n3. Cozinhe como omelete tradicional",
+      "categoria": "jantar",
+      "tags": ["proteico", "light"]
+    },
+    {
+      "id": 24,
+      "nome": "Wrap de Atum",
+      "ingredientes": [29, 17, 16, 49, 10, 46],
+      "dificuldade": "fácil",
+      "tempo": "10 min",
+      "porcoes": 2,
+      "instrucoes": "1. Misture o atum com os vegetais\n2. Passe a mistura no wrap\n3. Enrole e sirva",
+      "categoria": "jantar",
+      "tags": ["rápido", "prático"]
+    },
+    {
+      "id": 25,
+      "nome": "Ratatouille",
+      "ingredientes": [16, 22, 23, 24, 46, 44],
+      "dificuldade": "médio",
+      "tempo": "50 min",
+      "porcoes": 4,
+      "instrucoes": "1. Corte os vegetais em rodelas\n2. Arrume em camadas\n3. Asse com azeite e temperos",
+      "categoria": "jantar",
+      "tags": ["vegetariano", "francês"]
+    },
+    {
+      "id": 26,
+      "nome": "Frango ao Curry",
+      "ingredientes": [25, 2, 52, 53, 54, 18],
+      "dificuldade": "médio",
+      "tempo": "40 min",
+      "porcoes": 4,
+      "instrucoes": "1. Doure o frango\n2. Adicione o curry e leite\n3. Cozinhe até engrossar",
+      "categoria": "jantar",
+      "tags": ["aromático", "cremoso"]
+    },
+    {
+      "id": 27,
+      "nome": "Bruschetta",
+      "ingredientes": [10, 16, 46, 44, 53, 55],
+      "dificuldade": "fácil",
+      "tempo": "15 min",
+      "porcoes": 2,
+      "instrucoes": "1. Toaste o pão\n2. Misture os outros ingredientes\n3. Coloque sobre o pão",
+      "categoria": "jantar",
+      "tags": ["italiano", "entrada"]
+    },
+    {
+      "id": 28,
+      "nome": "Creme de Abóbora",
+      "ingredientes": [21, 2, 8, 53, 44, 55],
+      "dificuldade": "fácil",
+      "tempo": "30 min",
+      "porcoes": 4,
+      "instrucoes": "1. Cozinhe a abóbora\n2. Bata com os outros ingredientes\n3. Ajuste os temperos",
+      "categoria": "jantar",
+      "tags": ["cremoso", "outono"]
+    },
+    {
+      "id": 29,
+      "nome": "Salada de Quinoa",
+      "ingredientes": [39, 16, 18, 17, 46, 44],
+      "dificuldade": "fácil",
+      "tempo": "20 min",
+      "porcoes": 2,
+      "instrucoes": "1. Cozinhe a quinoa\n2. Misture com os vegetais\n3. Tempere a gosto",
+      "categoria": "jantar",
+      "tags": ["superfood", "saudável"]
+    },
+    {
+      "id": 30,
+      "nome": "Frango Grelhado com Legumes",
+      "ingredientes": [25, 18, 20, 22, 46, 44],
+      "dificuldade": "fácil",
+      "tempo": "30 min",
+      "porcoes": 2,
+      "instrucoes": "1. Tempere o frango\n2. Grelhe junto com os legumes\n3. Sirva quente",
+      "categoria": "jantar",
+      "tags": ["grelhado", "balanceado"]
+    },
+    {
+      "id": 31,
+      "nome": "Torta de Frango",
+      "ingredientes": [1, 42, 25, 16, 18, 8],
+      "dificuldade": "médio",
+      "tempo": "1 hora",
+      "porcoes": 6,
+      "instrucoes": "1. Prepare a massa\n2. Prepare o recheio\n3. Asse até dourar",
+      "categoria": "jantar",
+      "tags": ["caseira", "confort"]
+    },
+    {
+      "id": 32,
+      "nome": "Espaguete Alho e Óleo",
+      "ingredientes": [40, 53, 46, 44, 52, 55],
+      "dificuldade": "fácil",
+      "tempo": "20 min",
+      "porcoes": 2,
+      "instrucoes": "1. Cozinhe o macarrão\n2. Refogue o alho no azeite\n3. Misture tudo e finalize com salsinha",
+      "categoria": "jantar",
+      "tags": ["simples", "clássico"]
+    }
+  ]
+}
