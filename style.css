@@ -1,9 +1,12 @@
 :root {
-    --primary-color: #ff6b6b;
-    --secondary-color: #ff8e8e;
-    --background-color: #fff5f5;
-    --text-color: #333;
-    --light-color: #fff;
+    --primary: #ff6b6b;
+    --primary-light: #ff8e8e;
+    --secondary: #4ecdc4;
+    --background: #fff5f5;
+    --text: #333;
+    --light: #fff;
+    --gray: #f0f0f0;
+    --border: #e0e0e0;
 }
 
 * {
@@ -14,15 +17,19 @@
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--background);
+    color: var(--text);
     line-height: 1.6;
+    padding: 20px;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: var(--light);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 header {
@@ -32,34 +39,52 @@ header {
 }
 
 header h1 {
-    color: var(--primary-color);
+    color: var(--primary);
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.content {
-    background-color: var(--light-color);
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+header p {
+    color: var(--text);
+    opacity: 0.8;
+}
+
+/* Seção de ingredientes */
+.ingredients-section h2 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.category-section {
+    margin-bottom: 25px;
+}
+
+.category-section h3 {
+    margin-bottom: 10px;
+    color: var(--secondary);
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--secondary);
 }
 
 .ingredients-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 15px;
-    margin: 25px 0;
+    gap: 12px;
+    margin: 15px 0;
 }
 
 .ingredient-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
-    background-color: var(--background-color);
+    background-color: var(--gray);
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
+    border: 1px solid var(--border);
 }
 
 .ingredient-item:hover {
@@ -68,23 +93,148 @@ header h1 {
 }
 
 .ingredient-item.selected {
-    background-color: var(--primary-color);
-    color: var(--light-color);
+    background-color: var(--primary);
+    color: var(--light);
+    border-color: var(--primary);
 }
 
-.ingredient-item img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+.ingredient-icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.ingredient-name {
+    font-size: 0.9rem;
+}
+
+/* Seção de resultados */
+.results-section h2 {
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.recipe-category {
+    margin-bottom: 30px;
+}
+
+.recipe-category h3 {
+    margin-bottom: 15px;
+    color: var(--secondary);
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.recipe-card {
+    background-color: var(--light);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+}
+
+.recipe-header {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.recipe-header h4 {
+    color: var(--primary);
+    font-size: 1.3rem;
     margin-bottom: 8px;
 }
 
+.recipe-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.difficulty {
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.difficulty.fácil {
+    background: #d4edda;
+    color: #155724;
+}
+
+.difficulty.médio {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.difficulty.difícil {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.time, .servings {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--gray);
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.ingredients h5, .instructions h5 {
+    margin-bottom: 10px;
+    color: var(--secondary);
+    font-size: 1rem;
+}
+
+.ingredients ul {
+    list-style: none;
+}
+
+.ingredients li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.no-recipes {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+
+.no-recipes p {
+    margin-bottom: 10px;
+}
+
+/* Botões */
 .btn {
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: var(--primary-color);
-    color: var(--light-color);
+    background-color: var(--primary);
+    color: var(--light);
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -92,28 +242,44 @@ header h1 {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
+    text-align: center;
 }
 
 .btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-light);
 }
 
-.recipe-card {
-    background-color: var(--light-color);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+/* Responsividade */
+@media (max-width: 768px) {
+    .recipe-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .ingredients-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
 }
 
-.recipe-card h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.recipe-card ul {
-    margin-left: 20px;
-    margin-bottom: 15px;
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .recipe-meta {
+        gap: 8px;
+    }
+    
+    .ingredient-item {
+        padding: 8px;
+    }
+    
+    .ingredient-icon {
+        font-size: 1.5rem;
+    }
+    
+    .ingredient-name {
+        font-size: 0.8rem;
+    }
 }
 
 .hidden {
@@ -124,17 +290,6 @@ footer {
     text-align: center;
     margin-top: 30px;
     padding: 20px;
-    color: var(--primary-color);
+    color: var(--primary);
     font-weight: bold;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-    .ingredients-grid {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
-    
-    header h1 {
-        font-size: 2rem;
-    }
 }
