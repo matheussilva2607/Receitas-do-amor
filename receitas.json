@@ -1,6 +1,5 @@
 {
   "ingredientes": [
-    // Laticínios e Ovos
     {"id": 1, "nome": "Ovo", "icon": "🥚", "categoria": "laticinios"},
     {"id": 2, "nome": "Leite", "icon": "🥛", "categoria": "laticinios"},
     {"id": 3, "nome": "Queijo mussarela", "icon": "🧀", "categoria": "laticinios"},
@@ -9,8 +8,6 @@
     {"id": 6, "nome": "Iogurte natural", "icon": "🥛", "categoria": "laticinios"},
     {"id": 7, "nome": "Creme de leite", "icon": "🥛", "categoria": "laticinios"},
     {"id": 8, "nome": "Manteiga", "icon": "🧈", "categoria": "laticinios"},
-    
-    // Frutas
     {"id": 9, "nome": "Banana", "icon": "🍌", "categoria": "frutas"},
     {"id": 10, "nome": "Maçã", "icon": "🍎", "categoria": "frutas"},
     {"id": 11, "nome": "Morango", "icon": "🍓", "categoria": "frutas"},
@@ -18,8 +15,6 @@
     {"id": 13, "nome": "Manga", "icon": "🥭", "categoria": "frutas"},
     {"id": 14, "nome": "Limão", "icon": "🍋", "categoria": "frutas"},
     {"id": 15, "nome": "Uva", "icon": "🍇", "categoria": "frutas"},
-    
-    // Vegetais
     {"id": 16, "nome": "Tomate", "icon": "🍅", "categoria": "vegetais"},
     {"id": 17, "nome": "Alface", "icon": "🥬", "categoria": "vegetais"},
     {"id": 18, "nome": "Cenoura", "icon": "🥕", "categoria": "vegetais"},
@@ -29,8 +24,6 @@
     {"id": 22, "nome": "Abobrinha", "icon": "🥒", "categoria": "vegetais"},
     {"id": 23, "nome": "Berinjela", "icon": "🍆", "categoria": "vegetais"},
     {"id": 24, "nome": "Pimentão", "icon": "🫑", "categoria": "vegetais"},
-    
-    // Carnes e Proteínas
     {"id": 25, "nome": "Peito de frango", "icon": "🍗", "categoria": "carnes"},
     {"id": 26, "nome": "Carne moída", "icon": "🥩", "categoria": "carnes"},
     {"id": 27, "nome": "Ovos de codorna", "icon": "🥚", "categoria": "carnes"},
@@ -39,8 +32,6 @@
     {"id": 30, "nome": "Presunto", "icon": "🍖", "categoria": "carnes"},
     {"id": 31, "nome": "Bacon", "icon": "🥓", "categoria": "carnes"},
     {"id": 32, "nome": "Linguiça", "icon": "🌭", "categoria": "carnes"},
-    
-    // Grãos e Cereais
     {"id": 33, "nome": "Arroz branco", "icon": "🍚", "categoria": "graos"},
     {"id": 34, "nome": "Arroz integral", "icon": "🌾", "categoria": "graos"},
     {"id": 35, "nome": "Feijão carioca", "icon": "🥫", "categoria": "graos"},
@@ -48,14 +39,10 @@
     {"id": 37, "nome": "Grão-de-bico", "icon": "🥫", "categoria": "graos"},
     {"id": 38, "nome": "Aveia", "icon": "🌾", "categoria": "graos"},
     {"id": 39, "nome": "Quinoa", "icon": "🌾", "categoria": "graos"},
-    
-    // Massas
     {"id": 40, "nome": "Macarrão espaguete", "icon": "🍝", "categoria": "massas"},
     {"id": 41, "nome": "Macarrão penne", "icon": "🍝", "categoria": "massas"},
     {"id": 42, "nome": "Farinha de trigo", "icon": "🌾", "categoria": "massas"},
     {"id": 43, "nome": "Farinha de rosca", "icon": "🍞", "categoria": "massas"},
-    
-    // Temperos e Condimentos
     {"id": 44, "nome": "Sal", "icon": "🧂", "categoria": "temperos"},
     {"id": 45, "nome": "Açúcar", "icon": "🍚", "categoria": "temperos"},
     {"id": 46, "nome": "Azeite", "icon": "🫒", "categoria": "temperos"},
@@ -71,7 +58,6 @@
     {"id": 56, "nome": "Coentro", "icon": "🌿", "categoria": "temperos"}
   ],
   "receitas": [
-    // Café da Manhã (8 receitas)
     {
       "id": 1,
       "nome": "Omelete de Queijo",
@@ -160,8 +146,6 @@
       "categoria": "café da manhã",
       "tags": ["proteico", "satisfatório"]
     },
-
-    // Almoço (12 receitas)
     {
       "id": 9,
       "nome": "Arroz com Frango",
@@ -294,8 +278,6 @@
       "categoria": "almoço",
       "tags": ["leve", "clássica"]
     },
-
-    // Jantar (12 receitas)
     {
       "id": 21,
       "nome": "Sopa de Legumes",
